@@ -75,7 +75,7 @@ class ZCAN_Transmit_Data(Structure):
 
 # Загрузка DLL
 try:
-    zlgcan = ctypes.windll.LoadLibrary(r"C:\Users\Admin\Documents\GIT\Sripts\CAN\ControlCANFD.dll")
+    zlgcan = ctypes.windll.LoadLibrary(r".\ControlCANFD.dll")
 except Exception as e:
     print(f"Ошибка загрузки DLL: {e}")
     exit(1)
